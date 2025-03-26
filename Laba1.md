@@ -135,7 +135,7 @@ int main() {
     for (int t = 0; t <= t_max; t++) {
         double x = r1 * cos(w1 * t) - r2 * cos(w2 * t);
         double y = r1 * sin(w1 * t) - r2 * sin(w2 * t);
-        printf("t = %d: x = %.6f, y = %.6f\n", t, x, y);
+        printf("t = %d: x = %.6f AU, y = %.6f\n AU", t, x, y);
     }
     return 0;
 }
