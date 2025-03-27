@@ -16,35 +16,28 @@ int main() {
     float *array, sum = 0.0, average;
     float *ptr;
 
-    // Ввод количества элементов
     printf("Введите количество элементов массива: ");
     scanf("%d", &N);
 
-    // Выделение памяти для массива
     array = (float *)malloc(N * sizeof(float));
     if (array == NULL) {
         printf("Ошибка выделения памяти\n");
         return 1;
     }
 
-    // Заполнение массива значениями
     printf("Введите %d элементов массива:\n", N);
     for (ptr = array; ptr < array + N; ptr++) {
         scanf("%f", ptr);
     }
 
-    // Вычисление суммы элементов
     for (ptr = array; ptr < array + N; ptr++) {
         sum += *ptr;
     }
 
-    // Вычисление среднего арифметического
     average = sum / N;
 
-    // Вывод результата
     printf("Среднее арифметическое: %.2f\n", average);
 
-    // Освобождение памяти
     free(array);
 
     return 0;
@@ -87,14 +80,12 @@ void printBook(const Book *book) {
 int main() {
     Book books[3];
     int i;
-
-    // Ввод данных о книгах
     for (i = 0; i < 3; i++) {
         printf("Введите данные для книги %d:\n", i + 1);
 
         printf("Название: ");
         fgets(books[i].title, MAX_LENGTH, stdin);
-        books[i].title[strcspn(books[i].title, "\n")] = '\0'; // Удаление символа новой строки
+        books[i].title[strcspn(books[i].title, "\n")] = '\0';
 
         printf("Автор: ");
         fgets(books[i].author, MAX_LENGTH, stdin);
@@ -102,10 +93,9 @@ int main() {
 
         printf("Год издания: ");
         scanf("%d", &books[i].year);
-        getchar(); // Удаление оставшегося символа новой строки
+        getchar(); 
     }
 
-    // Вывод информации о книгах
     printf("\nИнформация о книгах:\n");
     for (i = 0; i < 3; i++) {
         printBook(&books[i]);
@@ -141,11 +131,9 @@ int main() {
     int month;
     Season season;
 
-    // Ввод номера месяца
     printf("Введите номер месяца (1-12): ");
     scanf("%d", &month);
 
-    // Определение сезона
     switch (month) {
         case 12:
         case 1:
