@@ -160,7 +160,6 @@ int main() {
             return 1;
     }
 
-    // Вывод сезона
     const char *seasonNames[] = {"Зима", "Весна", "Лето", "Осень"};
     printf("Сезон: %s\n", seasonNames[season]);
 
