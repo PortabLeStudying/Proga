@@ -81,7 +81,7 @@ int main(void) {
     int *ptrA = &a, *ptrB = &b;
     int sum = *ptrA + *ptrB;
 
-    printf("Sum of %d and %d is %d\n", *ptrA, *ptrB, sum);
+    printf("Сумма: %d\n", sum);
     return 0;
 }
 ```
@@ -114,7 +114,7 @@ int main(void) {
     int *ptrA = &a, *ptrB = &b;
     int max = (*ptrA > *ptrB) ? *ptrA : *ptrB;
 
-    printf("Maximum of %d and %d is %d\n", *ptrA, *ptrB, max);
+    printf("Ответ: %d\n", max);
     return 0;
 }
 ```
@@ -150,16 +150,16 @@ int main(void) {
 
     double *arr = (double *)malloc(n * sizeof(double));
     if (arr == NULL) {
-        printf("Memory allocation failed\n");
+        printf("Проблемы памяти\n");
         return 1;
     }
 
-    printf("Enter %d elements:\n", n);
+    printf("Введите элеиенты:\n");
     for (int i = 0; i < n; i++) {
         scanf("%lf", arr + i);
     }
 
-    printf("Array elements:\n");
+    printf("Результат:\n");
     for (int i = 0; i < n; i++) {
         printf("%lf ", *(arr + i));
     }
@@ -194,21 +194,21 @@ int main(void) {
 
 int main(void) {
     int n;
-    printf("Enter the number of elements: ");
+    printf("Кол-во элементов: ");
     scanf("%d", &n);
 
     int *arr = (int *)malloc(n * sizeof(int));
     if (arr == NULL) {
-        printf("Memory allocation failed\n");
+        printf("Проблемы памяти\n");
         return 1;
     }
 
-    printf("Enter %d elements:\n", n);
+    printf("Ввод элементов:\n");
     for (int i = 0; i < n; i++) {
         scanf("%d", arr + i);
     }
 
-    printf("Elements in reverse order:\n");
+    printf("Результат:\n");
     for (int i = n - 1; i >= 0; i--) {
         printf("%d ", *(arr + i));
     }
@@ -244,7 +244,7 @@ int main(void) {
     int a = 1234567890;
     unsigned char *ptr = (unsigned char *)&a;
 
-    printf("Byte representation of %d:\n", a);
+    printf("Результат:\n");
     for (int i = 0; i < sizeof(a); i++) {
         printf("%02x ", *(ptr + i));
     }
@@ -276,31 +276,31 @@ int main(void) {
 
 int main(void) {
     int rows, cols;
-    printf("Enter the number of rows and columns: ");
+    printf("Строки и столбцы: ");
     scanf("%d %d", &rows, &cols);
 
     int **arr = (int **)malloc(rows * sizeof(int *));
     if (arr == NULL) {
-        printf("Memory allocation failed\n");
+        printf("Проблемы памяти\n");
         return 1;
     }
 
     for (int i = 0; i < rows; i++) {
         arr[i] = (int *)malloc(cols * sizeof(int));
         if (arr[i] == NULL) {
-            printf("Memory allocation failed\n");
+            printf("Проблемы памяти\n");
             return 1;
         }
     }
 
-    printf("Enter elements of the array:\n");
+    printf("Введите элементы:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             scanf("%d", &arr[i][j]);
         }
     }
 
-    printf("Array elements:\n");
+    printf("Результат:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             printf("%d ", arr[i][j]);
