@@ -137,7 +137,7 @@ int main(void) {
 
 int main(void) {
     int n;
-    printf("Enter the number of elements: ");
+    printf("Кол-во элементов: ");
     scanf("%d", &n);
 
     double *arr = (double *)malloc(n * sizeof(double));
