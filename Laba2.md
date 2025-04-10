@@ -238,7 +238,7 @@ int main(void) {
 
     printf("Результат:\n");
     for (int i = 0; i < sizeof(a); i++) {
-        printf("%02x ", *(ptr + i));
+        printf("%d ", *(ptr + i));
     }
     printf("\n");
 
