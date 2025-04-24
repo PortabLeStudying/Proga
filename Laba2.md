@@ -19,6 +19,8 @@ int main(void) {
     return 0;
 }
 ```
+### Результат:
+![](https://github.com/PortabLeStudying/Proga/blob/images/2-1.png)
 
 ### Таблица переменных
 
@@ -77,6 +79,8 @@ int main(void) {
     return 0;
 }
 ```
+### Результат:
+![](https://github.com/PortabLeStudying/Proga/blob/images/2-2.png)
 
 ### Таблица переменных
 
@@ -110,6 +114,8 @@ int main(void) {
     return 0;
 }
 ```
+### Результат:
+![](https://github.com/PortabLeStudying/Proga/blob/images/2-3.png)
 
 ### Таблица переменных
 
@@ -161,6 +167,8 @@ int main(void) {
     return 0;
 }
 ```
+### Результат:
+![](https://github.com/PortabLeStudying/Proga/blob/images/2-4.png)
 
 ### Таблица переменных
 
@@ -210,6 +218,8 @@ int main(void) {
     return 0;
 }
 ```
+### Результат:
+![](https://github.com/PortabLeStudying/Proga/blob/images/2-5.png)
 
 ### Таблица переменных
 
@@ -245,6 +255,8 @@ int main(void) {
     return 0;
 }
 ```
+### Результат:
+![](https://github.com/PortabLeStudying/Proga/blob/images/2-6.png)
 
 ### Таблица переменных
 
@@ -307,6 +319,8 @@ int main(void) {
     return 0;
 }
 ```
+### Результат:
+![](https://github.com/PortabLeStudying/Proga/blob/images/2-7.png)
 
 ### Таблица переменных
 
