@@ -110,6 +110,10 @@ int main() {
 
 ![](https://github.com/PortabLeW/Proga/blob/images/Avtomat-11.png)
 
+![](https://github.com/PortabLeW/Proga/blob/images/Avtomat-12.png)
+
+![](https://github.com/PortabLeW/Proga/blob/images/Avtomat-13.png)
+
 ---
 
 ### Краткий анализ
