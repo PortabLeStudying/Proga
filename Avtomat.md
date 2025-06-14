@@ -232,7 +232,7 @@ int main() {
     expr[strcspn(expr, "\n")] = 0;
 
     int result = evaluatePostfix(expr);
-    printf("Результат: %d\n", result);
+    printf("Result: %d\n", result);
 
     return 0;
 }
@@ -242,13 +242,11 @@ int main() {
 
 ### Результаты работы программы
 
-| Вход                         | Выход |
-|-----------------------------|-------|
-| `5 3 2 * +`                 | 11    |
-| `7 2 + 5 -`                 | 4     |
-| `9 3 /`                     | 3     |
-| `10 5 2 - /`                | 5     |
-| `5 3 + 2 *`                 | 16    |
+![](https://github.com/PortabLeW/Proga/blob/images/Avtomat-21.png)
+
+![](https://github.com/PortabLeW/Proga/blob/images/Avtomat-22.png)
+
+![](https://github.com/PortabLeW/Proga/blob/images/Avtomat-23.png)
 
 ---
 
@@ -312,13 +310,9 @@ int main() {
 
 ### Результаты работы программы
 
-| Вход | Выход           |
-|------|------------------|
-| 5    | 1                |
-|      | 1 1              |
-|      | 1 2 1            |
-|      | 1 3 3 1          |
-|      | 1 4 6 4 1        |
+![](https://github.com/PortabLeW/Proga/blob/images/Avtomat-31.png)
+
+![](https://github.com/PortabLeW/Proga/blob/images/Avtomat-32.png)
 
 ---
 
